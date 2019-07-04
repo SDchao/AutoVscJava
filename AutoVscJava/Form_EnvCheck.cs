@@ -23,7 +23,6 @@ namespace AutoVscJava
         private void Form1_Load(object sender, EventArgs e)
         {
             CheckForIllegalCrossThreadCalls = false;
-
             Task checkJdkTask = new Task(() =>
             {
                 if(!EnvChecker.CheckJavaSE())
@@ -40,13 +39,20 @@ namespace AutoVscJava
                     Button_install.Show();
                 }
             });
-
             checkJdkTask.Start();
         }
 
         private void Form_EnvCheck_Shown(object sender, EventArgs e)
         {
             Button_install.Hide();
+        }
+
+        private void Button_install_Click(object sender, EventArgs e)
+        {
+            Form_InstallJdk form_InstallJdk = new Form_InstallJdk();
+            DialogResult result = form_InstallJdk.ShowDialog();
+            if (result == DialogResult.OK)
+                Button_next.Enabled = true;
         }
     }
 }

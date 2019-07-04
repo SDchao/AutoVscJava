@@ -52,6 +52,7 @@
             resources.ApplyResources(this.Button_install, "Button_install");
             this.Button_install.Name = "Button_install";
             this.Button_install.UseVisualStyleBackColor = true;
+            this.Button_install.Click += new System.EventHandler(this.Button_install_Click);
             // 
             // Button_next
             // 
