@@ -145,7 +145,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label_jdk.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="Label_jdk_status.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -175,7 +175,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label_jdk_status.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="Button_install.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -202,7 +202,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Button_install.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="Button_next.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -220,7 +220,7 @@
     <value>4</value>
   </data>
   <data name="Button_next.Text" xml:space="preserve">
-    <value>下一步</value>
+    <value>完成</value>
   </data>
   <data name="&gt;&gt;Button_next.Name" xml:space="preserve">
     <value>Button_next</value>
@@ -232,7 +232,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Button_next.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="PictureBox_status.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -259,7 +259,34 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;PictureBox_status.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
+  </data>
+  <data name="Label_copyright.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label_copyright.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 102</value>
+  </data>
+  <data name="Label_copyright.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 12</value>
+  </data>
+  <data name="Label_copyright.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="Label_copyright.Text" xml:space="preserve">
+    <value>By SDchao From Bilibili</value>
+  </data>
+  <data name="&gt;&gt;Label_copyright.Name" xml:space="preserve">
+    <value>Label_copyright</value>
+  </data>
+  <data name="&gt;&gt;Label_copyright.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label_copyright.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label_copyright.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -274,7 +301,7 @@
     <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>检查环境</value>
+    <value>Java开发环境一键配置器</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Form_EnvCheck</value>

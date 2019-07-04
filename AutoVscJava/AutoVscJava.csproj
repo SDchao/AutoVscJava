@@ -53,25 +53,18 @@
   <ItemGroup>
     <Compile Include="Classes\CmdRunner.cs" />
     <Compile Include="Classes\EnvChecker.cs" />
+    <Compile Include="Classes\ExceptionHandler.cs" />
+    <Compile Include="Classes\JdkInstaller.cs" />
     <Compile Include="Form_EnvCheck.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form_EnvCheck.Designer.cs">
       <DependentUpon>Form_EnvCheck.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_InstallJdk.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_InstallJdk.Designer.cs">
-      <DependentUpon>Form_InstallJdk.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form_EnvCheck.resx">
       <DependentUpon>Form_EnvCheck.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form_InstallJdk.resx">
-      <DependentUpon>Form_InstallJdk.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

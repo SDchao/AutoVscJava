@@ -34,6 +34,7 @@
             this.Button_install = new System.Windows.Forms.Button();
             this.Button_next = new System.Windows.Forms.Button();
             this.PictureBox_status = new System.Windows.Forms.PictureBox();
+            this.Label_copyright = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox_status)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,6 +60,7 @@
             resources.ApplyResources(this.Button_next, "Button_next");
             this.Button_next.Name = "Button_next";
             this.Button_next.UseVisualStyleBackColor = true;
+            this.Button_next.Click += new System.EventHandler(this.Button_next_Click);
             // 
             // PictureBox_status
             // 
@@ -67,10 +69,18 @@
             this.PictureBox_status.Name = "PictureBox_status";
             this.PictureBox_status.TabStop = false;
             // 
+            // Label_copyright
+            // 
+            resources.ApplyResources(this.Label_copyright, "Label_copyright");
+            this.Label_copyright.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.Label_copyright.Name = "Label_copyright";
+            this.Label_copyright.Click += new System.EventHandler(this.Label_copyright_Click);
+            // 
             // Form_EnvCheck
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.Label_copyright);
             this.Controls.Add(this.Button_next);
             this.Controls.Add(this.Button_install);
             this.Controls.Add(this.PictureBox_status);
@@ -94,6 +104,7 @@
         private System.Windows.Forms.PictureBox PictureBox_status;
         private System.Windows.Forms.Button Button_install;
         private System.Windows.Forms.Button Button_next;
+        private System.Windows.Forms.Label Label_copyright;
     }
 }
 

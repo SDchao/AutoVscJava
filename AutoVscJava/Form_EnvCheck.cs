@@ -25,13 +25,14 @@ namespace AutoVscJava
             CheckForIllegalCrossThreadCalls = false;
             Task checkJdkTask = new Task(() =>
             {
-                if(!EnvChecker.CheckJavaSE())
+                if (EnvChecker.CheckJavaSE())
                 {
                     Label_jdk_status.Text = "已安装";
                     Label_jdk_status.ForeColor = Color.Green;
                     PictureBox_status.Image = Resources.complete;
                     Button_next.Enabled = true;
-                } else
+                }
+                else
                 {
                     Label_jdk_status.Text = "未安装";
                     Label_jdk_status.ForeColor = Color.Red;
@@ -47,12 +48,64 @@ namespace AutoVscJava
             Button_install.Hide();
         }
 
-        private void Button_install_Click(object sender, EventArgs e)
+        private async void Button_install_Click(object sender, EventArgs e)
         {
-            Form_InstallJdk form_InstallJdk = new Form_InstallJdk();
-            DialogResult result = form_InstallJdk.ShowDialog();
-            if (result == DialogResult.OK)
+            Button_install.Enabled = false;
+            PictureBox_status.Image = Resources.loading_small;
+            Label_jdk_status.Text = "正在安装";
+            Label_jdk_status.ForeColor = Color.Black;
+
+            string targetPath;
+            while (true)
+            {
+                FolderBrowserDialog dialog = new FolderBrowserDialog
+                {
+                    Description = "请选择Java SE的安装文件夹"
+                };
+
+                
+                if (dialog.ShowDialog() == DialogResult.OK)
+                {
+                    targetPath = dialog.SelectedPath;
+                    break;
+                }
+            }
+
+            var r = Task.Run(() =>
+            {
+                return JdkInstaller.Install(targetPath);
+            });
+
+            InstallCompleted(await r);
+        }
+
+        public void InstallCompleted(bool result)
+        {
+            if (result)
+            {
+                Label_jdk_status.Text = "已安装";
+                Label_jdk_status.ForeColor = Color.Green;
+                PictureBox_status.Image = Resources.complete;
                 Button_next.Enabled = true;
+                Button_install.Hide();
+            }
+            else
+            {
+                Label_jdk_status.Text = "未安装";
+                Label_jdk_status.ForeColor = Color.Red;
+                PictureBox_status.Image = Resources.error;
+                Button_install.Show();
+            }
+        }
+
+        private void Button_next_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Label_copyright_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://space.bilibili.com/12263994");
         }
     }
 }
