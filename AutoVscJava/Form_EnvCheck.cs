@@ -24,7 +24,7 @@ namespace AutoVscJava
         {
             CheckForIllegalCrossThreadCalls = false;
 
-            Thread checkJdkThread = new Thread(() =>
+            Task checkJdkTask = new Task(() =>
             {
                 if(!EnvChecker.CheckJavaSE())
                 {
@@ -41,7 +41,7 @@ namespace AutoVscJava
                 }
             });
 
-            checkJdkThread.Start();
+            checkJdkTask.Start();
         }
 
         private void Form_EnvCheck_Shown(object sender, EventArgs e)
