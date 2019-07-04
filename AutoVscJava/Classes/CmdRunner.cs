@@ -42,7 +42,12 @@ namespace AutoVscJava.Classes
 
             //向cmd窗口发送输入信息
             p.StandardInput.AutoFlush = true;
-            p.StandardInput.WriteLine(command);
+
+            string[] commands = command.Split('\n');
+
+            foreach(string line in commands)
+                p.StandardInput.WriteLine(command);
+
             p.WaitForExit();
             string result = p.StandardOutput.ReadToEnd();
             string error = p.StandardError.ReadToEnd();
