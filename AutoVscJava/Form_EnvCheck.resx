@@ -145,34 +145,121 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label_jdk.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
-  <data name="label_jdk_status.AutoSize" type="System.Boolean, mscorlib">
+  <data name="Label_jdk_status.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label_jdk_status.Location" type="System.Drawing.Point, System.Drawing">
-    <value>154, 30</value>
+  <data name="Label_jdk_status.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="label_jdk_status.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="Label_jdk_status.Location" type="System.Drawing.Point, System.Drawing">
+    <value>155, 30</value>
+  </data>
+  <data name="Label_jdk_status.Size" type="System.Drawing.Size, System.Drawing">
     <value>53, 12</value>
   </data>
-  <data name="label_jdk_status.TabIndex" type="System.Int32, mscorlib">
+  <data name="Label_jdk_status.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="label_jdk_status.Text" xml:space="preserve">
+  <data name="Label_jdk_status.Text" xml:space="preserve">
     <value>正在检查</value>
   </data>
-  <data name="&gt;&gt;label_jdk_status.Name" xml:space="preserve">
-    <value>label_jdk_status</value>
+  <data name="&gt;&gt;Label_jdk_status.Name" xml:space="preserve">
+    <value>Label_jdk_status</value>
   </data>
-  <data name="&gt;&gt;label_jdk_status.Type" xml:space="preserve">
+  <data name="&gt;&gt;Label_jdk_status.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label_jdk_status.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Label_jdk_status.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label_jdk_status.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;Label_jdk_status.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Button_install.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Button_install.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 54</value>
+  </data>
+  <data name="Button_install.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 23</value>
+  </data>
+  <data name="Button_install.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="Button_install.Text" xml:space="preserve">
+    <value>一键安装</value>
+  </data>
+  <data name="&gt;&gt;Button_install.Name" xml:space="preserve">
+    <value>Button_install</value>
+  </data>
+  <data name="&gt;&gt;Button_install.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button_install.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Button_install.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Button_next.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="Button_next.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Button_next.Location" type="System.Drawing.Point, System.Drawing">
+    <value>178, 120</value>
+  </data>
+  <data name="Button_next.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 22</value>
+  </data>
+  <data name="Button_next.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="Button_next.Text" xml:space="preserve">
+    <value>下一步</value>
+  </data>
+  <data name="&gt;&gt;Button_next.Name" xml:space="preserve">
+    <value>Button_next</value>
+  </data>
+  <data name="&gt;&gt;Button_next.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button_next.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Button_next.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="PictureBox_status.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PictureBox_status.Location" type="System.Drawing.Point, System.Drawing">
+    <value>211, 23</value>
+  </data>
+  <data name="PictureBox_status.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 25</value>
+  </data>
+  <data name="PictureBox_status.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="PictureBox_status.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;PictureBox_status.Name" xml:space="preserve">
+    <value>PictureBox_status</value>
+  </data>
+  <data name="&gt;&gt;PictureBox_status.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PictureBox_status.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PictureBox_status.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -181,7 +268,10 @@
     <value>6, 12</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>301, 161</value>
+    <value>265, 149</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
