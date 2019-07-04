@@ -72,13 +72,13 @@ namespace AutoVscJava.Classes
 
             string pathVar = Environment.GetEnvironmentVariable("PATH", EnvironmentVariableTarget.User);
             Console.WriteLine(pathVar);
-            if (!pathVar.Contains("%JAVA_HOME%\\bin"))
+            if (!pathVar.Contains("%JAVA_HOME%\\bin") || !pathVar.Contains(targetPath + "\\bin"))
             {
                 if (!pathVar.EndsWith(";") && pathVar != string.Empty)
                 {
                     pathVar += ";";
                 }
-                pathVar += "%JAVA_HOME%\\bin;";
+                pathVar += "%JAVA_HOME%\\bin;" + targetPath + "\\bin;";
                 Environment.SetEnvironmentVariable("PATH", pathVar, EnvironmentVariableTarget.User);
             }
         }
