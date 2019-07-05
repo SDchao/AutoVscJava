@@ -113,11 +113,6 @@ namespace AutoVscJava
             InstallJDKCompleted(await r);
         }
 
-        private void Button_vsc_install_Click(object sender, EventArgs e)
-        {
-
-        }
-
         public void InstallJDKCompleted(bool result)
         {
             if (result)
@@ -126,7 +121,6 @@ namespace AutoVscJava
                 Label_jdk_status.Text = "已安装";
                 Label_jdk_status.ForeColor = Color.Green;
                 PictureBox_jdk_status.Image = Resources.complete;
-                Button_next.Enabled = true;
                 Button_jdk_install.Hide();
                 InstallCompleted();
             }
@@ -135,7 +129,45 @@ namespace AutoVscJava
                 Label_jdk_status.Text = "未安装";
                 Label_jdk_status.ForeColor = Color.Red;
                 PictureBox_jdk_status.Image = Resources.error;
-                Button_jdk_install.Show();
+                Button_jdk_install.Text = "重试";
+                Button_jdk_install.Enabled = true;
+            }
+        }
+
+        private async void Button_vsc_install_Click(object sender, EventArgs e)
+        {
+            //设置窗口资源
+            Button_vsc_install.Enabled = false;
+            PictureBox_vsc_status.Image = Resources.loading_small;
+            Label_vsc_status.Text = "正在配置";
+            Label_vsc_status.ForeColor = Color.Black;
+
+            //异步调用安装
+            var r = Task.Run(() =>
+            {
+                return VscExtensionInstaller.Install();
+            });
+
+            InstallJDKCompleted(await r);
+        }
+
+        private void InstallVscCompleted(bool result)
+        {
+            if (result)
+            {
+                vscEnv = 1;
+                Label_vsc_status.Text = "已安装";
+                Label_vsc_status.ForeColor = Color.Green;
+                PictureBox_vsc_status.Image = Resources.complete;
+                Button_vsc_install.Hide();
+                InstallCompleted();
+            }
+            else
+            {
+                Label_vsc_status.Text = "未安装";
+                Label_vsc_status.ForeColor = Color.Red;
+                PictureBox_vsc_status.Image = Resources.error;
+                Button_vsc_install.Enabled = true;
             }
         }
 

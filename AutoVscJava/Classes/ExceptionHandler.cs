@@ -29,7 +29,7 @@ namespace AutoVscJava.Classes
                 Application.Exit();
             });
 
-            t.SetApartmentState(ApartmentState.STA);
+            t.SetApartmentState(ApartmentState.STA);    //仅STA线程可操作剪切板
             t.Start();
 
         }

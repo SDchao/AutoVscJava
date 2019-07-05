@@ -40,6 +40,7 @@ namespace AutoVscJava.Classes
 
         private static bool ExtractJdk()
         {
+            //检查目录下是否存在压缩包
             if (!File.Exists("jdk.7z"))
             {
                 MessageBox.Show("没有找到目录下的jdk.7z！\n请阅读下载页的使用说明", "缺失安装文件");
@@ -50,6 +51,7 @@ namespace AutoVscJava.Classes
             {
                 SevenZipExtractor extractor = new SevenZipExtractor("jdk.7z");
                 
+                //获取压缩包内非目录文件List
                 List<string> filePathsInSZ = new List<string>();
                 foreach(var data in extractor.ArchiveFileData)
                 {
