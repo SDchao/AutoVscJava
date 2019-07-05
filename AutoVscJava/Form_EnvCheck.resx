@@ -145,7 +145,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label_jdk.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>9</value>
   </data>
   <data name="Label_jdk_status.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -175,34 +175,34 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label_jdk_status.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>8</value>
   </data>
-  <data name="Button_install.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="Button_jdk_install.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="Button_install.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="Button_jdk_install.Location" type="System.Drawing.Point, System.Drawing">
     <value>157, 54</value>
   </data>
-  <data name="Button_install.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="Button_jdk_install.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 23</value>
   </data>
-  <data name="Button_install.TabIndex" type="System.Int32, mscorlib">
+  <data name="Button_jdk_install.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="Button_install.Text" xml:space="preserve">
+  <data name="Button_jdk_install.Text" xml:space="preserve">
     <value>一键安装</value>
   </data>
-  <data name="&gt;&gt;Button_install.Name" xml:space="preserve">
-    <value>Button_install</value>
+  <data name="&gt;&gt;Button_jdk_install.Name" xml:space="preserve">
+    <value>Button_jdk_install</value>
   </data>
-  <data name="&gt;&gt;Button_install.Type" xml:space="preserve">
+  <data name="&gt;&gt;Button_jdk_install.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Button_install.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Button_jdk_install.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;Button_install.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;Button_jdk_install.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="Button_next.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -211,7 +211,7 @@
     <value>NoControl</value>
   </data>
   <data name="Button_next.Location" type="System.Drawing.Point, System.Drawing">
-    <value>178, 92</value>
+    <value>185, 168</value>
   </data>
   <data name="Button_next.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 22</value>
@@ -232,40 +232,40 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Button_next.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
-  <data name="PictureBox_status.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="PictureBox_jdk_status.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="PictureBox_status.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="PictureBox_jdk_status.Location" type="System.Drawing.Point, System.Drawing">
     <value>211, 23</value>
   </data>
-  <data name="PictureBox_status.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="PictureBox_jdk_status.Size" type="System.Drawing.Size, System.Drawing">
     <value>25, 25</value>
   </data>
-  <data name="PictureBox_status.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+  <data name="PictureBox_jdk_status.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
   </data>
-  <data name="PictureBox_status.TabIndex" type="System.Int32, mscorlib">
+  <data name="PictureBox_jdk_status.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;PictureBox_status.Name" xml:space="preserve">
-    <value>PictureBox_status</value>
+  <data name="&gt;&gt;PictureBox_jdk_status.Name" xml:space="preserve">
+    <value>PictureBox_jdk_status</value>
   </data>
-  <data name="&gt;&gt;PictureBox_status.Type" xml:space="preserve">
+  <data name="&gt;&gt;PictureBox_jdk_status.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;PictureBox_status.Parent" xml:space="preserve">
+  <data name="&gt;&gt;PictureBox_jdk_status.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;PictureBox_status.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;PictureBox_jdk_status.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="Label_copyright.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="Label_copyright.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 102</value>
+    <value>12, 178</value>
   </data>
   <data name="Label_copyright.Size" type="System.Drawing.Size, System.Drawing">
     <value>143, 12</value>
@@ -286,6 +286,117 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label_copyright.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="Label_vsc.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label_vsc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 108</value>
+  </data>
+  <data name="Label_vsc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 12</value>
+  </data>
+  <data name="Label_vsc.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="Label_vsc.Text" xml:space="preserve">
+    <value>VScode环境</value>
+  </data>
+  <data name="&gt;&gt;Label_vsc.Name" xml:space="preserve">
+    <value>Label_vsc</value>
+  </data>
+  <data name="&gt;&gt;Label_vsc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label_vsc.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label_vsc.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Label_vsc_status.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label_vsc_status.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 108</value>
+  </data>
+  <data name="Label_vsc_status.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 12</value>
+  </data>
+  <data name="Label_vsc_status.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="Label_vsc_status.Text" xml:space="preserve">
+    <value>正在检查</value>
+  </data>
+  <data name="Label_vsc_status.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;Label_vsc_status.Name" xml:space="preserve">
+    <value>Label_vsc_status</value>
+  </data>
+  <data name="&gt;&gt;Label_vsc_status.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label_vsc_status.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label_vsc_status.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="PictureBox_vsc_status.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PictureBox_vsc_status.Location" type="System.Drawing.Point, System.Drawing">
+    <value>211, 102</value>
+  </data>
+  <data name="PictureBox_vsc_status.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 25</value>
+  </data>
+  <data name="PictureBox_vsc_status.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="PictureBox_vsc_status.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;PictureBox_vsc_status.Name" xml:space="preserve">
+    <value>PictureBox_vsc_status</value>
+  </data>
+  <data name="&gt;&gt;PictureBox_vsc_status.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PictureBox_vsc_status.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PictureBox_vsc_status.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Button_vsc_install.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Button_vsc_install.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 133</value>
+  </data>
+  <data name="Button_vsc_install.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 23</value>
+  </data>
+  <data name="Button_vsc_install.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="Button_vsc_install.Text" xml:space="preserve">
+    <value>一键配置</value>
+  </data>
+  <data name="&gt;&gt;Button_vsc_install.Name" xml:space="preserve">
+    <value>Button_vsc_install</value>
+  </data>
+  <data name="&gt;&gt;Button_vsc_install.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button_vsc_install.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Button_vsc_install.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -295,7 +406,7 @@
     <value>6, 12</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>265, 121</value>
+    <value>265, 199</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

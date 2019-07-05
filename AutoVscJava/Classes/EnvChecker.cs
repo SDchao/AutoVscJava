@@ -36,6 +36,19 @@ namespace AutoVscJava.Classes
             return false;
         }
 
+        public static bool CheckVscExtension()
+        {
+            string path = GetVscPath();
+            CmdResult result = CmdRunner.CmdRun(
+                path.Substring(0, 2) +
+                "\ncd " + path + "bin" +
+                "\ncode --list-extensions");
+            if (result.result.Contains("vscjava.vscode-java-pack"))
+                return true;
+            else
+                return false;
+        }
+
         private static void InitVscodePath()
         {
             RegistryKey machineKey = 

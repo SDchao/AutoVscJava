@@ -17,12 +17,16 @@ namespace AutoVscJava.Classes
             targetPath = path;
             try
             {
+                //异步设置环境变量
                 var t = Task.Run(() =>
                 {
                     SetEnvVar();
                 });
 
+                //开始解压
                 bool extractResult = ExtractJdk();
+
+                //等待环境变量设置
                 t.Wait();
                 return extractResult;
             }
@@ -39,6 +43,7 @@ namespace AutoVscJava.Classes
             if (!File.Exists("jdk.7z"))
             {
                 MessageBox.Show("没有找到目录下的jdk.7z！\n请阅读下载页的使用说明", "缺失安装文件");
+                return false;
             }
             
             try
