@@ -148,7 +148,7 @@ namespace AutoVscJava
                 return VscExtensionInstaller.Install();
             });
 
-            InstallJDKCompleted(await r);
+            InstallVscCompleted(await r);
         }
 
         private void InstallVscCompleted(bool result)
@@ -167,6 +167,7 @@ namespace AutoVscJava
                 Label_vsc_status.Text = "未安装";
                 Label_vsc_status.ForeColor = Color.Red;
                 PictureBox_vsc_status.Image = Resources.error;
+                Button_vsc_install.Text = "重试";
                 Button_vsc_install.Enabled = true;
             }
         }
