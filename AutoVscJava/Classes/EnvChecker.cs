@@ -25,6 +25,8 @@ namespace AutoVscJava.Classes
         public static bool CheckVscode()
         {
             string path = GetVscPath();
+            if (path == string.Empty)
+                return false;
             CmdResult result = CmdRunner.CmdRun(
                 path.Substring(0,2) + 
                 "\ncd " + path + "bin" + 
@@ -55,8 +57,9 @@ namespace AutoVscJava.Classes
                 Registry.LocalMachine.OpenSubKey(@"SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall");
             RegistryKey userKey = 
                 Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Uninstall");
-
-            foreach(string keyName in machineKey.GetSubKeyNames())
+            string[] machineKeyList = machineKey.GetSubKeyNames();
+            string[] userKeyList = userKey.GetSubKeyNames();
+            foreach (string keyName in machineKeyList)
             {
                 RegistryKey key = machineKey.OpenSubKey(keyName);
                 object name = key.GetValue("DisplayName");
@@ -67,7 +70,7 @@ namespace AutoVscJava.Classes
                 }
             }
 
-            foreach (string keyName in userKey.GetSubKeyNames())
+            foreach (string keyName in userKeyList)
             {
                 RegistryKey key = userKey.OpenSubKey(keyName);
                 object name = key.GetValue("DisplayName");
@@ -77,7 +80,6 @@ namespace AutoVscJava.Classes
                     return;
                 }
             }
-
         }
 
         public static string GetVscPath()
