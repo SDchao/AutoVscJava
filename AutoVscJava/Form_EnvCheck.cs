@@ -63,7 +63,7 @@ namespace AutoVscJava
                     else
                     {
                         Label_vsc_status.Text = "未安装插件";
-                        Label_vsc_status.ForeColor = Color.Green;
+                        Label_vsc_status.ForeColor = Color.Red;
                         PictureBox_vsc_status.Image = Resources.error;
                         Button_vsc_install.Show();
                     }

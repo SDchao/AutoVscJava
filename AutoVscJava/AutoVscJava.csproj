@@ -58,6 +58,7 @@
     <Compile Include="Classes\EnvChecker.cs" />
     <Compile Include="Classes\ExceptionHandler.cs" />
     <Compile Include="Classes\JdkInstaller.cs" />
+    <Compile Include="Classes\VscExtensionInstaller.cs" />
     <Compile Include="Form_EnvCheck.cs">
       <SubType>Form</SubType>
     </Compile>
