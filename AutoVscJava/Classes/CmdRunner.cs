@@ -73,8 +73,8 @@ namespace AutoVscJava.Classes
             try
             {
                 p.Start();
-                p.WaitForExit();
                 cmdResult.Set(p.StandardOutput.ReadToEnd(), p.StandardError.ReadToEnd());
+                p.WaitForExit();                
             }
             catch (Exception e)
             {
