@@ -67,6 +67,7 @@ namespace AutoVscJava
                         PictureBox_vsc_status.Image = Resources.error;
                         Button_vsc_install.Show();
                     }
+                    InstallCompleted();
                 }
                 else
                 {

@@ -48,9 +48,11 @@ namespace AutoVscJava.Classes
             foreach(string line in commands)
                 p.StandardInput.WriteLine(command);
 
-            p.WaitForExit();
             string result = p.StandardOutput.ReadToEnd();
             string error = p.StandardError.ReadToEnd();
+
+            p.WaitForExit();
+            
             p.Close();
             CmdResult cmdResult = new CmdResult(result, error);
             return cmdResult;
